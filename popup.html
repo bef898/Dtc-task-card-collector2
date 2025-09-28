@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; padding: 16px; font-family: Arial, sans-serif; }
+    input { width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; background: #0078d7; color: white; border: none; cursor: pointer; }
+    button:disabled { background: #ccc; }
+    .error { color: red; font-size: 12px; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h3>Enter TSFN Code</h3>
+  <input type="text" id="tsfnInput" placeholder="e.g. TSFN12345" maxlength="20">
+  <div class="error" id="errorMsg"></div>
+  <button id="goBtn" disabled>Go</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
